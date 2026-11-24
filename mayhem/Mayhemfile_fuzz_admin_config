@@ -1,0 +1,9 @@
+project: savantenvs/Unvanquished
+target: fuzz_admin_config
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_admin_config/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_admin_config
+    libfuzzer: true
+    timeout: 5

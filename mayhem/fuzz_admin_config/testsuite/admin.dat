@@ -1,0 +1,34 @@
+[level]
+level   = 0
+name    = ^4Unknown Player
+flags   = listplayers admintest adminhelp time
+
+[level]
+level   = 5
+name    = ^1Server Operator
+flags   = ALLFLAGS -IMMUTABLE -INCOGNITO
+
+[admin]
+name    = Player
+guid    = 0123456789ABCDEF0123456789ABCDEF
+level   = 5
+flags   = 
+pubkey  = 
+msg     = hello
+counter = 3
+lastseen = 1700000000
+
+[ban]
+name    = Griefer
+guid    = FEDCBA9876543210FEDCBA9876543210
+ip      = 192.168.1.0/24
+reason  = teamkilling
+made    = 2024-01-01 12:00:00
+expires = 1800000000
+banner  = Player
+
+[command]
+command = rules
+exec    = cp "No griefing"
+desc    = Show the server rules
+levels  = 0 5
